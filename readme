@@ -1,0 +1,7 @@
+# uwsgi
+uwsgi --processes 8 --loop gevent --enable-threads --http :8088 --wsgi-file app.py --async 800
+
+# gunicorn
+gunicorn -w 8 -k gevent app:application -b :8088
+
+
