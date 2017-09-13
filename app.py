@@ -13,7 +13,7 @@ import collections
 #####################################
 urls = (
     "/", "index",
-    "/mymongo/(.+)", "Control",
+    "/mymongo/(.+)", "Control",    #<host>:<port>/mymongo/<func>/<db>/<collection>
 )
 
 
